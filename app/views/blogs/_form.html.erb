@@ -1,0 +1,23 @@
+<p><%= notice %></p>
+<%= form_with model: @blog do |form| %>
+
+	<div>
+		<%= form.label :title %><br>
+		<%= form.text_field :title %>
+	</div>
+
+	<div>
+		<%= form.label :content %><br>
+		<%= form.text_field :content %>
+	</div>
+
+	<div>
+		<%= form.label :student_id %><br>
+		<%= form.text_field :student_id %>
+	</div>
+
+	<div>
+		<%= form.submit %>
+	</div>
+
+<% end %>
